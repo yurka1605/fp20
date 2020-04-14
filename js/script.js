@@ -38,19 +38,21 @@ $('.slider__control').on('click', function(e) {
 });
 
 // send form 
-$('.banner__form button').click(function(e) {
+$('.banner__form_btn, .footer__form_btn').click(function(e) {
     e.preventDefault();
     var data = {
-        "Имя": $(this).parent().children('.form__inputs').children('input[name="name"]').val(),
-        "Телефон": $(this).parent().children('.form__inputs').children('input[name="phone"]').val(),
+        "Имя": $(this).parent().children('input[name="name"]').val(),
+        "Телефон": $(this).parent().children('input[name="phone"]').val(),
     }
     $.ajax({
         type: 'POST',
-        url: 'https://yurka1605.github.io/uropoten/mail.php',
+        url: 'mail.php',
         data: data
     }).done(() => {
-        $(this).parent().children('.form__inputs').children('input[name="name"]').val('');
-        $(this).parent().children('.form__inputs').children('input[name="phone"]').val('');
+        $(this).parent().children('input[name="name"]').val('');
+        $(this).parent().children('input[name="phone"]').val('');
+    }).error(e => {
+        console.log(e);
     });
 });
 /** ======================== END:User actions ========================== **/
@@ -70,12 +72,8 @@ function changeSlide(slider, arrow) {
     } else {
         num = num === lastNum ? 1 : num + 1;
     }
-    
-    var left = $(firtsSlide).width() * (num - 1) + ($(window).width() > 992 ? 30 * (num - 1) : 0);
 
-    if ($(window).width() < 992 && $(slider).hasClass('feedback__slider')) {
-        left = left / 2;
-    }
+    var left = $(firtsSlide)[0].offsetWidth * (num - 1);
     $( firtsSlide ).animate({ marginLeft: `${ - left }px`}, 200);
     $(current).removeClass('active');
     $(slides[num - 1]).addClass('active');

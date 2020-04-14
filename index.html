@@ -76,11 +76,11 @@
                                 <h4 class="price__new">2 158 ₽</h4>
                                 <del class="price__old">2 999 ₽</del>
                             </div>
-                            <div class="banner__form_controls">
-                                <input class="form__control" type="text" placeholder="Ваше имя">
-                                <input class="form__control" id="topPhone" type="text" placeholder="Номер телефона">
+                            <form class="banner__form_controls">
+                                <input class="form__control" name="name" type="text" placeholder="Ваше имя">
+                                <input class="form__control" id="topPhone" name="phone" type="text" placeholder="Номер телефона">
                                 <button class="btn banner__form_btn">Оформить заказ</button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <div class="col-lg-3 banner__main_images">
@@ -212,106 +212,100 @@
                 <div class="row">
                     <h2 class="col-lg-12 section-title line">Активные компоненты</h2>
                 </div>
-                <div class="row components__items">
-                    <div class="col-lg-4">
-                        <div class="components__item active">
-                            <div class="components__item_text">
-                                <div class="component__title">Кардицепс</div>
-                                <div class="components__text">
-                                    Уникальный гриб использующийся в традиционной китайской медицине 
-                                    Отмечают его дезинтоксикационную, противоопухолевую, имуномодулирующую, 
-                                    гепатопротекторную и антибактериальную активность. Эффективен в качестве противовирусного средства.
+                <div class="row">
+                    <div class="col-lg-12 components__items">
+                        <div class="components-col">
+                                <div class="components__item component-1">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">Кардицепс</h4>
+                                        <div class="components__text">
+                                            Уникальный гриб использующийся в традиционной китайской медицине 
+                                            Отмечают его дезинтоксикационную, противоопухолевую, имуномодулирующую, 
+                                            гепатопротекторную и антибактериальную активность. Эффективен в качестве противовирусного средства.
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-1.png" alt="Кардицепс">
                                 </div>
-                            </div>
-                            <img src="./assets/component-1.png" alt="Кардицепс">
+                                <div class="components__item component-5">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">мумиё</h4>
+                                        <div class="components__text">
+                                            Это богатый органо-минеральный комплекс природного происхождения. 
+                                            Доказана его эффективность в профилактике простудных и вирусных заболеваний, 
+                                            воспалительных процессов.
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-5.png" alt="мумиё">
+                                </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="components__item">
-                            <div class="components__item_text">
-                                <div class="component__title">Бузина</div>
-                                <div class="components__text">
-                                    Яркая ягода, лечит воспалительные процессы в горле и ротовой полости, 
-                                    обладает противовирусными и антисептическими свойствами.
+                        <div class="components-col">
+                                <div class="components__item component-2">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">Бузина</h4>
+                                        <div class="components__text">
+                                            Яркая ягода, лечит воспалительные процессы в горле и ротовой полости, 
+                                            обладает противовирусными и антисептическими свойствами.
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-2.png" alt="Бузина">
                                 </div>
-                            </div>
-                            <img src="./assets/component-2.png" alt="Бузина">
+                                <div class="components__item component-6">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">лапачо</h4>
+                                        <div class="components__text">
+                                            Деревья Лапачо произрастают в тропиках, нескольких областях Аргентины и нынешней Мексики, 
+                                            Кора деревьев- это мощное антисептическое, противовирусное и иммуномодулирующее средство.
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-6.png" alt="лапачо">
+                                </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="components__item active">
-                            <div class="components__item_text">
-                                <div class="component__title">ЖЕньшень</div>
-                                <div class="components__text">
-                                    Одно из древних и удивительных растений. Корень его применяется для борьбы с инфекциями, 
-                                    например, простуды и гриппа (существует ряд научных исследований, 
-                                    что корень женьшеня помогает предотвратить простуду и грипп и сделать симптомы мягче, 
-                                    когда происходит заражение инфекцией
+                        <div class="components-col">
+                                <div class="components__item component-3">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">Женьшень</h4>
+                                        <div class="components__text">
+                                            Одно из древних и удивительных растений. Корень его применяется для борьбы с инфекциями, 
+                                            например, простуды и гриппа (существует ряд научных исследований, 
+                                            что корень женьшеня помогает предотвратить простуду и грипп и сделать симптомы мягче, 
+                                            когда происходит заражение инфекцией
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-3.png" alt="ЖЕньшень">
                                 </div>
-                            </div>
-                            <img src="./assets/component-3.png" alt="ЖЕньшень">
+                                <div class="components__item component-7">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">Леспеденца</h4>
+                                        <div class="components__text">
+                                            Лечебные качеститае и Японии. Обладает иммуномодулирующими, 
+                                            противовирусными, антисептическими свойствами.                                 
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-7.png" alt="Леспеденца">
+                                </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="components__item">
-                            <div class="components__item_text">
-                                <div class="component__title">копеечник</div>
-                                <div class="components__text">
-                                    Многолетник, обладающий несколькими полезными свойствами для человеческого организма. 
-                                    Содержит несколько компонентов, одно из которых- мангиферин, 
-                                    обладающий противовирусной активностью в отношении большинства типов вирусов.
+                        <div class="components-col">
+                                <div class="components__item component-4">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">Копеечник</h4>
+                                        <div class="components__text">
+                                            Многолетник, обладающий несколькими полезными свойствами для человеческого организма. 
+                                            Содержит несколько компонентов, одно из которых- мангиферин, 
+                                            обладающий противовирусной активностью в отношении большинства типов вирусов.
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-4.png" alt="копеечник">
                                 </div>
-                            </div>
-                            <img src="./assets/component-4.png" alt="копеечник">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="components__item active">
-                            <div class="components__item_text">
-                                <div class="component__title">Экстракт коры ивы</div>
-                                <div class="components__text">
-                                    Содержит вещество гликозид салицин, обладающее противовоспалительным, антисептическим, 
-                                    тонизирующим и кровоостанавливающим действием
+                                <div class="components__item component-8">
+                                    <div class="components__item_text">
+                                        <h4 class="component__title">Экстракт коры ивы</h4>
+                                        <div class="components__text">
+                                            Содержит вещество гликозид салицин, обладающее противовоспалительным, антисептическим, 
+                                            тонизирующим и кровоостанавливающим действием
+                                        </div>
+                                    </div>
+                                    <img src="./assets/component-8.png" alt="Экстракт коры ивы">
                                 </div>
-                            </div>
-                            <img src="./assets/component-5.png" alt="Экстракт коры ивы">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="components__item">
-                            <div class="components__item_text">
-                                <div class="component__title">мумиё</div>
-                                <div class="components__text">
-                                    Это богатый органо-минеральный комплекс природного происхождения. 
-                                    Доказана его эффективность в профилактике простудных и вирусных заболеваний, 
-                                    воспалительных процессов.
-                                </div>
-                            </div>
-                            <img src="./assets/component-6.png" alt="мумиё">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="components__item active">
-                            <div class="components__item_text">
-                                <div class="component__title">Леспеденца</div>
-                                <div class="components__text">
-                                    Лечебные качеститае и Японии. Обладает иммуномодулирующими, 
-                                    противовирусными, антисептическими свойствами.                                 
-                                </div>
-                            </div>
-                            <img src="./assets/component-7.png" alt="Леспеденца">
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="components__item active">
-                            <div class="components__item_text">
-                                <div class="component__title">лапачо</div>
-                                <div class="components__text">
-                                    Деревья Лапачо произрастают в тропиках, нескольких областях Аргентины и нынешней Мексики, 
-                                    Кора деревьев- это мощное антисептическое, противовирусное и иммуномодулирующее средство.
-                                </div>
-                            </div>
-                            <img src="./assets/component-8.png" alt="лапачо">
                         </div>
                     </div>
                 </div>
@@ -320,20 +314,15 @@
         <section class="important">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 important__empty"></div>
-                    <div class="col-lg-3 col-12">
-                        <h2 class="section-title">ВАЖНО!</h2>
+                    <div class="col-lg-6 col-12">
+                        <h2 class="section-title">Важная информация</h2>
                         <p>
-                            Антисептики используют для лечения инфицированных ран, 
-                            при поражении микроорганизмами кожных покровов и слизистых оболочек и др. 
-                            Их отличие от т.н. дезинфектантов чисто формальное: первые применяют для 
-                            антимикробной обработки поверхности человеческого тела или его полостей, вторые — для окружающих.
+                            Антисептики используют для лечения инфицированных ран, при поражении микроорганизмами кожных покровов и слизистых оболочек и др. Их отличие от т.н. дезинфектантов чисто формальное: первые применяют для антимикробной обработки поверхности человеческого тела или его полостей, вторые — для окружающих.
                         </p>
-                        <p class="important__price"><b>2 499</b></p>
-                        <button class="important__btn">Оформить заказ</button>
+                        <p class="important__price"><b>2 499 ₽</b><button class="important__btn btn">Оформить заказ</button></p>
                     </div>
-                    <div class="col-lg-6 col-12 header__middle_images desctop">
-                        <img src="" alt="">
+                    <div class="col-lg-6 col-12 important__img">
+                        <img src="./assets/all.png" alt="all">
                     </div>
                 </div>
             </div>
@@ -341,48 +330,47 @@
         <section class="experts">
             <div class="container">
                 <div class="row">
-                    <h2 class="col-12 section-title">Экспертное мнение</h2>
+                    <h2 class="col-12 section-title line">Экспертное мнение</h2>
                 </div>
                 <div class="row expert__item">
-                    <div class="col-lg-3 col-6 expert__img">
-                        <img src="./assets/expert-1.png" alt="expert-1">
-                    </div>
-                    <div class="col-lg-9 expert__info">
-                        <div class="expert__info-main">
-                            <h3 class="expert__title">Иван Капустин</h3>
-                            <span class="expert__subtitle">Независимый эксперт, Владелец клиники</span>
-                            <span class="expert__stag">Стаж практики 19 лет</span>
+                    <div class="col-lg-4 col-6 expert__img">
+                        <div class="expert__img_wrap">
+                            <img src="./assets/expert-1.png" alt="expert-1">
                         </div>
-                        <div class="products__text_desc">
+                    </div>
+                    <div class="col-lg-8 expert__info">
+                        <div class="expert__info-main">
+                            <h3 class="expert__title">Иван Капустин <span class="expert__stag">Стаж практики 19 лет</span></h3>
+                            <span class="expert__subtitle">Независимый эксперт, Владелец клиники</span>
+                        </div>
+                        <div class="expert__info_text">
                             <p>
-                                Натуральная изотоническая помада на основе растительной формулы биогенных концентратов растений, сока и экстраординарного масла корня копеечника забытого, оказывающих комплексное противовирусное, регенерирующее, противовоспалительное, увлажняющее действие на нежную кожу губ.
+                                Применение комплекса FP-20 в период сезонных эпидемий гриппа и ОРВИ оправдано и эффективно прежде всего в качестве профилактики. Если же вы уже заболели, рекоммендую в первую очередь обратиться к врачу для постановки диагноза и назначений.
                             </p>
-                            <p>
-                                Изотонический комплекс активных веществ обладает максимальным трансдермальным проникающим действием в нижние структуры кожи, полным усвоением, многоплановым действием на симптомы инфекционного процесса, вызванного вирусами и сопутствующие изменения мягких тканей в области губ 
-                                Состав: концентраты бузины, папоротника, осины, хвои кедра, леспедецы уснеи, лапачо, лапчатки, полыни, красного корня, листьев облепихи, ромашки, мелиссы. Зверобоя, тысячелистника, лиственницы, березы, лопуха бархатцев подорожника, липы, энотеры, масло шиповника, масло облепиховое, воск жасмина, воск пчелиный, масло какао, масло здравеца, масло баассу, масло андиборы, пантотенат кальция, витамин Е, витамин А, бетулин, ресвератрол, карнозин.
+                                FP-20 именно комплексный набор препаратов, позволяющий в неблагоприятной окружающей обстановке не заболеть. Изотонический комплекс активных веществ, входящих в FP-20 обладает доказанным противовирусным и противобактериальным действием. Взять к примеру женьшень, корень этого растения обладает целым рядом лечебных свойств – укрепляет иммунитет, тонизирует организм, уменьшает воспаление, стимулирует метаболические процессы. Или мумие, природный органический комплекс, который применяют для повышения устойчивости организма к вирусным, бактериальным и прочим инфекциям. Для комплексной защиты я бы посоветовал в дополнение к FP-20 носить медицинскую маску, при этом вероятность заболеть будет сведена к минимуму.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="row expert__item">
-                    <div class="col-lg-9 expert__info">
+                    <div class="col-lg-8 expert__info">
                         <div class="expert__info-main">
-                            <h3 class="expert__title">Иван Капустин</h3>
-                            <span class="expert__subtitle">Независимый эксперт, Владелец клиники</span>
-                            <span class="expert__stag">Стаж практики 19 лет</span>
+                            <h3 class="expert__title">Анна Владимирова <span class="expert__stag">Стаж практики 7 лет</span></h3>
+                            <span class="expert__subtitle">Независимый эксперт, фармацевт</span>
                         </div>
-                        <div class="products__text_desc">
+                        <div class="expert__info_text">
                             <p>
-                                Натуральная изотоническая помада на основе растительной формулы биогенных концентратов растений, сока и экстраординарного масла корня копеечника забытого, оказывающих комплексное противовирусное, регенерирующее, противовоспалительное, увлажняющее действие на нежную кожу губ.
+                                Общеизвестно, что большинство вирусных инфекций передаются прежде всего воздушно-капельным путем или через немытые руки, когда вирус попадает прямо на слизистую носа, рта или глаз, которая представляет собой «входные ворота» для вируса. Исключить попадание вирусов на слизистые крайне сложно, маски не всегда являются надежной защитой от инфекции, за руками проследить практически невозможно, так как в среднем человек прикасается к лицу около 15-ти раз в час. Поэтому важно обеспечить мощный местный иммунитет во «входных воротах» инфекции (нос и ротоглотка), который уже будет готов к встрече с вирусом. Ведь предотвратить всегда легче, чем потом лечить. В настоящее время на аптечном рынке представлены множество антивирусных препаратов, но ни один из них не предлагает комплексную защиту организма от вирусов. FP-20 является одним из немногих комплексов, который полностью защищает человека.
                             </p>
                             <p>
-                                Изотонический комплекс активных веществ обладает максимальным трансдермальным проникающим действием в нижние структуры кожи, полным усвоением, многоплановым действием на симптомы инфекционного процесса, вызванного вирусами и сопутствующие изменения мягких тканей в области губ 
-                                Состав: концентраты бузины, папоротника, осины, хвои кедра, леспедецы уснеи, лапачо, лапчатки, полыни, красного корня, листьев облепихи, ромашки, мелиссы. Зверобоя, тысячелистника, лиственницы, березы, лопуха бархатцев подорожника, липы, энотеры, масло шиповника, масло облепиховое, воск жасмина, воск пчелиный, масло какао, масло здравеца, масло баассу, масло андиборы, пантотенат кальция, витамин Е, витамин А, бетулин, ресвератрол, карнозин.
+                                Я бы хотела отметить один из компонентов, входящих во все препараты комплекса, это- копеечник, он же красный корень. Копеечник является сырьем для получения алпизарина – противовирусного и противогерпетического средства, основным компонентом которого является, ксантон мангиферин, содержащийся в этом растении.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6 expert__img">
-                        <img src="./assets/expert-2.png" alt="expert-2">
+                    <div class="col-lg-4 col-6 expert__img">
+                        <div class="expert__img_wrap">
+                            <img src="./assets/expert-2.png" alt="expert-2">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -390,90 +378,107 @@
         <section class="feedback">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title col-lg-12">Отзывы клиентов</h2>
+                    <h2 class="col-12 section-title line">Отзывы клиентов</h2>
                 </div>
                 <div class="feedback__slider">
-                    <div data-num="1" class="feedback__slider_item slide active row">
-
+                    <div data-num="1" class="feedback__slider_item slide active">
+                        <div class="feedback__img">
+                            <img src="./assets/client-1.png" alt="client-1">     
+                        </div>
+                        <div class="feedback__info">
+                            <p>
+                                Хочу поблагодарить за этот набор! Использовала его осенью прошлого года, ни разу не было ни гриппа ни ОРВИ! Нашла в составе кору деревьев Лапачо - это мощное антисептическое, противовирусное и иммуномодулирующее средство.
+                                Все компоненты обладают приятным вкусом и не вызывают никакой побочки.
+                            </p>
+                            <div class="feedback__people">
+                                <h4>Ольга Сергеевна</h4>
+                                <span>Москва, 37 лет</span>
+                            </div>
+                        </div>
                     </div>
-                    <div data-num="2" class="feedback__slider_item slide row">
-
+                    <div data-num="2" class="feedback__slider_item slide">
+                        <div class="feedback__img">
+                            <img src="./assets/client-2.png" alt="client-2">     
+                        </div>
+                        <div class="feedback__info">
+                            <p>
+                                Хорошее современное средство для профилактики и лечения простуды и гриппа. Всегда болею после отпуска (кондиционеры, смена климата, ну вы понимаете). После FP-20 обычной для меня "послеотпускной" простуды не было. Понравилось, что набор комплексный и еще на раз осталось. Сейчас обычно делают лекарства строго на один курс лечения, это не очень экономично.
+                            </p>
+                            <div class="feedback__people">
+                                <h4>Анна Васильевна</h4>
+                                <span>Москва, 54 лет</span>
+                            </div>
+                        </div>
                     </div>
-                    <div data-num="3" class="feedback__slider_item slide row">
-
+                    <div data-num="3" class="feedback__slider_item slide">
+                        <div class="feedback__img">
+                            <img src="./assets/client-3.png" alt="client-3">     
+                        </div>
+                        <div class="feedback__info">
+                            <p>
+                                Купила FP-20 уже во время эпидемии. Муж вернулся из командировки в Испанию и я сильно волновалась что заразимся. Использовала строго по инструкции сама и давала дочери, слава Богу никто не заболел.
+                                Еще он стоит недорого по сравнению даже с некоторыми отечественными препаратами. Буду применять его дальше.
+                            </p>
+                            <div class="feedback__people">
+                                <h4>Елена Евгеньевна</h4>
+                                <span>Москва, 49 лет</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="slider__controls">
                         <div class="slider__control left">
-                            <img src="./assets/arrow.png" alt="slider-arrow-left">
+                            <img src="./assets/slider-arrow.png" alt="slider-arrow-left">
                         </div>
                         <div class="slider__control right">
-                            <img src="./assets/arrow.png" alt="slider-arrow-right">
+                            <img src="./assets/slider-arrow.png" alt="slider-arrow-right">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sert">
+        <section class="sertificate">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 sert col-12">
-                        <h2 class="section-title mobile">
-                            Производитель,<br>
-                            которому можно доверять!
-                        </h2>
-                        <img src="./assets/sertificate.png" alt="sert">
-                        <div class="sert-shadow">
-                            <div class="shadow-left"></div>
-                            <div class="shadow-right"></div>
-                        </div>
-                    </div>
                     <div class="col-lg-8 col-12">
-                        <h2 class="section-title desctop">
-                            Производитель,<br>
-                            которому можно доверять!
+                        <h2 class="section-title">
+                            Производитель, которому можно доверять!
                         </h2>
-                        <img src="./assets/made.png" alt="made" class="made__img desctop">
-                        <div class="made-shadow desctop">
-                            <div class="shadow-left"></div>
-                            <div class="shadow-right"></div>
+                        <div class="sertificate__info">
+                            Наша компания входит в Единую Ассоциация Медицинских Средств Российской Федерации. В 2018 году мы были удостоены премии в номинации Лучшие средства. Наша компания входит в Единую Ассоциация Медицинских Средств Российской Федерации. В 2018 году мы были удостоены премии в номинации Лучшие Антисептические средства.
                         </div>
                         <div class="row icons">
-                            <div class="col-lg-4 col-6 made__clean">
-                                <img src="./assets/clean-nature.png" alt="made">
+                            <div class="col-lg-6 sertificate__item">
+                                <img src="./assets/icon-1.png" alt="1">
+                                <div class="sertificate__item_text">
+                                    Высокое качества<br> продукции и сервиса
+                                </div>
                             </div>
-                            <div class="col-lg-8 col-12">
-                                <div class="row made__items">
-                                    <div class="made__item">
-                                        <img src="./assets/icon-1.png" alt="1">
-                                        <div class="made__item_text">
-                                            Высокое качества
-                                            продукции и
-                                            сервиса
-                                        </div>
-                                    </div>
-                                    <div class="made__item">
-                                        <img src="./assets/icon-2.png" alt="2">
-                                        <div class="made__item_text">
-                                            13 лет лидер
-                                            аптечных продаж                                            
-                                        </div>
-                                    </div>
-                                    <div class="made__item">
-                                        <img src="./assets/icon-3.png" alt="3">
-                                        <div class="made__item_text">
-                                            Европейские
-                                            стандарты
-                                            производства
-                                        </div>
-                                    </div>
+                            <div class="col-lg-6 sertificate__item">
+                                <img src="./assets/icon-2.png" alt="2">
+                                <div class="sertificate__item_text">
+                                    Европейские<br>
+                                    стандарты производства                                         
+                                </div>
+                            </div>
+                            <div class="col-lg-6 sertificate__item">
+                                <img src="./assets/icon-3.png" alt="3">
+                                <div class="sertificate__item_text">
+                                    13 лет лидер<br>
+                                    аптечных продаж                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6 sertificate__item">
+                                <img src="./assets/icon-4.png" alt="4">
+                                <div class="sertificate__item_text">
+                                    <span>Сашера-Мед</span>
+                                    продукты природной чистоты
                                 </div>
                             </div>
                         </div>
-                        <img src="./assets/made-mobile-1.png" alt="mad-1" class="mobile">
-                        <img src="./assets/made-mobile-2.png" alt="mad-2" class="mobile">
-                        <div class="made-shadow mobile">
-                            <div class="shadow-left"></div>
-                            <div class="shadow-right"></div>
+                    </div>
+                    <div class="col-lg-4 sert col-12">
+                        <div class="sert__wrap">
+                            <img src="./assets/sertificate.png" alt="sert">
                         </div>
                     </div>
                 </div>
@@ -481,8 +486,30 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Принимаем заказы</h2>
+                        <div class="footer__text-form">
+                            Способствует укреплению иммунитета, уменьшению симптомов
+                            интоксикации и воспаления.  Помогает организму бороться с вирусом.
+                        </div>
+                        <form action="" class="footer__form">
+                            <input class="form__control" name="name" type="text" placeholder="Ваше имя">
+                            <input class="form__control" name="phone" id="bottomPhone" type="text" placeholder="Номер телефона">
+                            <div class="footer__form_price">
+                                <h4 class="price__new">2 158 ₽</h4>
+                                <del class="price__old">2 999 ₽</del>
+                            </div>
+                            <button class="btn footer__form_btn">Оформить заказ</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 footer__form_img">
+                        <img src="./assets/all.png" alt="all" class="all">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer__bottom">
             <div class="container">

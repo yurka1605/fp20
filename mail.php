@@ -5,9 +5,9 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
-	$project_name = "UROPOTEN заявка";
+	$project_name = "FP-20 заявка";
 	$admin_email  = "litvinov_yuriy@inbox.ru";
-	$form_subject = "Form Subject";
+	$form_subject = "Новый заказ";
 
 	foreach ( $_POST as $key => $value ) {
 			$message .= "
