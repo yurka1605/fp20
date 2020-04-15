@@ -29,6 +29,17 @@ $( document ).ready(function() {
     }, 1000);
 });
 
+$(window).scroll(() => {
+    const top = $(window).scrollTop();
+    const heightX2 = $('.header__scroll').height() * 2;
+    const isScroll = $('.header__scroll').hasClass('scroll');
+    if (top > heightX2 && !isScroll) {
+        $('.header__scroll').addClass('scroll');
+    } else if (top < heightX2 && isScroll) {
+        $('.header__scroll').removeClass('scroll');
+    }
+});
+
 /** ======================== User actions ========================== **/
 // slider arrows
 $('.slider__control').on('click', function(e) {
@@ -54,6 +65,14 @@ $('.banner__form_btn, .footer__form_btn').click(function(e) {
     }).error(e => {
         console.log(e);
     });
+});
+
+// click menu item
+$('.nav-item:not(.active)').click(function(e) {
+    e.preventDefault();
+    var className = $(this).data('class');
+    var top = $(`section.${ className }`).offset().top - 40;
+    $('html, body').animate({scrollTop: top}, 300);
 });
 /** ======================== END:User actions ========================== **/
 
