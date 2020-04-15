@@ -44,10 +44,6 @@ $(window).scroll(() => {
 // scroll to form
 $('.important__btn, .header__btn').on('click', function(e) {
     e.preventDefault();
-    if ($(this).hasClass('important__btn')) {
-        $('html, body').animate({scrollTop: $('.footer__form').offset().top }, 300);
-        return;
-    }
     const elTop = $(this).offset().top;
     const headerTop = $('.banner__main').offset().top - 40;
     const footerTop = $('.footer__form').offset().top;
