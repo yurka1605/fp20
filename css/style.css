@@ -406,6 +406,17 @@ nav {
 .item-pomada .products__img img {
     top: -93px;
 }
+.products__list {
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+.products__list li {
+    list-style-type: disc;
+    color: #e3420d;
+}
+.products__list li span {
+    color: #000;
+}
 /* END:products */
 
 /* components */
@@ -416,7 +427,7 @@ nav {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    max-height: 1094px;
+    max-height: 1117.5px;
 }
 .components__item {
     background-color: #efefef;
@@ -434,7 +445,6 @@ nav {
     font-weight: 700;
     line-height: 1;
     margin-bottom: 20px;
-    text-transform: capitalize;
     white-space: nowrap;
 }
 .components__item img {
@@ -448,13 +458,13 @@ nav {
     margin-bottom: 0;
 }
 .component-1 {
-    padding-bottom: 30px;
+    padding-bottom: 54px;
 }
 .component-2 {
-    padding-bottom: 54px;
+    padding-bottom: 60px;
 }
 .component-3 {
-    padding-bottom: 54px;
+    padding-bottom: 25px;
 }
 .component-5 {
     /* padding-bottom: 54px; */
@@ -464,10 +474,10 @@ nav {
     padding-bottom: 55px;
 }
 .component-7 {
-    padding-bottom: 48px;
+    padding-bottom: 27px;
 }
 .component-8 {
-    padding-bottom: 36px;
+    padding-bottom: 55px;
 }
 .component-6 .components__text {margin-bottom: 51px;}
 /* END:components */
@@ -494,6 +504,10 @@ nav {
     margin-bottom: 0;
     font-size: 22px;
 }
+.important__price p {
+    font-size: 22px;
+    max-width: 50%;
+}
 .important__price b {
     color: #fff;
     font-family: 'Lato', sans-serif;
@@ -505,6 +519,7 @@ nav {
 }
 .important__btn {
     width: 57%;
+    height: 56px;
 }
 .important__btn:hover {
     color: #ffffff;
