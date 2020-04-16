@@ -68,10 +68,10 @@ $('.feedback__slider').swipe({
 
 // card swipe
 function leftSwipe() {
-    changeSlide($('.feedback__slider'), true);
+    changeSlide($('.feedback__slider'), false);
 }
 function rightSwipe() {
-    changeSlide($('.feedback__slider'), false);
+    changeSlide($('.feedback__slider'), true);
 }
 
 // send form 
