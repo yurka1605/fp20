@@ -398,7 +398,7 @@ nav {
     margin-bottom: 60px;
 }
 .item-sprey .products__img {max-height: 243.5px;}
-.item-sprey .products__img img {margin-left: 65px;}
+.item-sprey .products__img img {/* margin-left: 65px; */}
 .item-maz .products__img img {
     margin-left: -32px;
     top: -30px;
@@ -794,6 +794,9 @@ nav {
 .desctop {
     display: block;
 }
+.banner__img {
+    display: none;
+}
 
 @media (max-width: 1199px) {
     .logo-text__img {
@@ -913,6 +916,10 @@ nav {
 }
 
 @media (max-width: 991px) {
+    .header {
+        background-size: cover;
+        background-position: top center;
+    }
     .nav {
         display: none;
     }
@@ -1099,6 +1106,57 @@ nav {
     }
 }
 @media (max-width: 767px) {
+    .header__scroll.scroll {
+        padding: 10px 0;
+    }
+    .logo > img {
+        height: 30px;
+        width: 30px;
+    }
+    .logo-text__img {
+        height: 20px;
+    }
+    .header__btn {
+        width: 180px;
+        height: 30px;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .banner__img {
+        display: block;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .banner__main {
+        padding-top: 30px;
+    }
+    .subtitle {
+        padding-bottom: 30px;
+    }
+    .products__img img {
+        margin-left: 0;
+        height: 250px;
+        transform: translateX(-25%);
+    }
+    .item-pomada .products__img img {
+        top: 0;
+        margin-top: -50px;
+    }
+    .item-sprey .products__img img {
+        margin-left: 0;
+    }
+    .item-maz .products__img img {    
+        left: 50%;   
+        height: 250px;  
+        min-width: auto;
+    }
+    .important .section-title,
+    .danger__title,
+    .products__item_subtitle,
+    .products__title {
+        text-align: center;
+    }
     .subtitle {
         font-size: 18px;
     }
@@ -1114,15 +1172,17 @@ nav {
     .form__timer {
         transform: translateX(0);
         right: 0;
+        position: static;
+        margin: 0 auto;
     }
     .banner__form_price {
         margin: 0;
-        max-width: 50%;
-        text-align: right;
-        padding: 50px 0;
+        max-width: 100%;
+        text-align: center;
+        font-size: 36px;
     }
     .banner__form_title {
-        padding-bottom: 20px;
+        display: none;
     }
     .danger__items {
         flex-direction: column;
@@ -1269,7 +1329,7 @@ nav {
         width: calc(100% + 30px);
     }
     .danger__items {
-        margin: 0 -15px;
-        width: calc(100% + 30px);
+        margin: 0 -15px;
+        width: calc(100% + 30px);
     }
 }

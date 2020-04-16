@@ -59,6 +59,21 @@ $('.slider__control').on('click', function(e) {
     changeSlide(slider, $(this).hasClass('left'));
 });
 
+// swipe
+$('.feedback__slider').swipe({
+    swipeLeft: leftSwipe,
+    swipeRight: rightSwipe,
+    threshold: 30
+});
+
+// card swipe
+function leftSwipe() {
+    changeSlide($('.feedback__slider'), true);
+}
+function rightSwipe() {
+    changeSlide($('.feedback__slider'), false);
+}
+
 // send form 
 $('.banner__form_btn, .footer__form_btn').click(function(e) {
     e.preventDefault();
