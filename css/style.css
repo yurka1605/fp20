@@ -1245,6 +1245,12 @@ nav {
 }
 
 @media (max-width: 480px) {
+    .header {
+        padding-top: 90px;
+    }
+    .subtitle {
+padding-bottom: 5px;
+}
     .products__item {
         padding: 20px 20px 30px 20px;
         width: calc(100% + 60px);
