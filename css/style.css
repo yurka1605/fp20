@@ -1332,4 +1332,11 @@ nav {
         margin: 0 -15px;
         width: calc(100% + 30px);
     }
+    .banner__img {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .banner__img .all {
+        max-width: 100%;
+    }
 }
